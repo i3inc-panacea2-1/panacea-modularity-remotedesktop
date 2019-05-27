@@ -8,6 +8,8 @@ namespace Panacea.Modularity.RemoteDesktop
 {
     public interface IRemoteDesktop : IPlugin
     {
-
+        bool IsRunning();
+        void Connect(string user, string pass, string domain, string server);
+        void Disconnect();
     }
 }
